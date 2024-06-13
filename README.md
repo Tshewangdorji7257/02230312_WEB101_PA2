@@ -28,6 +28,33 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Pokémon Explorer
+
+Pokémon Explorer is a React application that allows users to explore Pokémon data fetched from the PokeAPI. It includes features such as viewing Pokémon details, catching and releasing Pokémon, searching for specific Pokémon, and pagination through a list of Pokémon.
+
+## Features
+
+- **Home Page**:
+  - Displays a search input to find specific Pokémon by name or ID.
+  - Pagination controls to navigate through the list of Pokémon.
+  - Option to view caught Pokémon.
+
+- **PokemonDetails Component**:
+  - Shows details of a selected Pokémon including its image, type, basic stats, and moves.
+  - Provides options to catch the Pokémon and navigate back to the Home page.
+
+- **CaughtPokemon Component**:
+  - Lists Pokémon that have been caught.
+  - Allows users to release caught Pokémon.
+
+- **PokemonList Component**:
+  - Displays a grid of Pokémon cards, each showing Pokémon name and image.
+  - Clicking on a Pokémon card fetches and displays detailed information about that Pokémon.
+
+- **usePokemonStore Hook**:
+  - Manages global state including Pokémon list, selected Pokémon details, search input value, pagination, loading state, error handling, caught Pokémon list, and related actions using Zustand.
+  - Utilizes localStorage to persist caught Pokémon across sessions.
+
 
 ## Deploy on Vercel
 
